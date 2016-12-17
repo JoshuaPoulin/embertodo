@@ -1,0 +1,16 @@
+<form>
+  <div class="form-group">
+    <label>Email address</label>
+    {{input type="text" class="form-control" value=title placeholder="New Task"}}
+  </div>
+  <div class="form-group">
+    <label>Due Date</label>
+    {{input type="date" class="form-control" value=date}}
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    {{textarea class="form-control" value=description placerholder="Describe Task"}}
+  </div>
+  <button {{action 'addTask'}} class="btn btn-primary">Submit</button>
+</form>
+<h1> New Task </h1>
