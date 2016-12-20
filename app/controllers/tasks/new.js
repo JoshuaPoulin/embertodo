@@ -16,10 +16,6 @@ export default Ember.Controller.extend({
 
       //Save to Database
       newTask.save();
-      console.log("saved");
-      console.log(date);
-      console.log(title);
-      console.log(description);
 
       //Clear Form
       this.setProperties({
@@ -30,5 +26,4 @@ export default Ember.Controller.extend({
 
     }
   }
-
 });
