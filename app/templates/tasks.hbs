@@ -2,7 +2,8 @@
 <h1>Tasks</h1>
 {{#each model as |task|}}
   <div class="well">
-    <h4>{{task.title}}</h4>
+    <h3 style="display:inline-block;">{{task.title}}</h3>
+    <small style="display:inline-block; float:right"> Due: {{task.date}}</small>
     <p>{{task.description}}</p>
   </div>
 {{/each}}
