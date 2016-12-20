@@ -4,6 +4,13 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'embertodo',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+      apiKey: 'AIzaSyCESgFqbGPxZIH96LRich3GAVhU-dP2uL0',
+      authDomain: 'embertodolist-d17f2.firebaseapp.com',
+      databaseURL: 'https://embertodolist-d17f2.firebaseio.com/',
+      storageBucket: 'gs://embertodolist-d17f2.appspot.com',
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
